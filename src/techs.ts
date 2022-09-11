@@ -155,6 +155,24 @@ const techs = [
     hint: 'Reactive domain model persistence for relational databases.',
     url: 'https://hibernate.org/',
   },
+  {
+    name: 'Gradle',
+    image: 'gradle.png',
+    hint: 'From mobile apps to microservices, from small startups to big enterprises, it helps teams build, automate and deliver better software, faster.',
+    url: 'https://gradle.org/',
+  },
+  {
+    name: 'Swagger',
+    image: 'swagger.png',
+    hint: 'Helps users build, document, test and consume RESTful web services.',
+    url: 'https://swagger.io/',
+  },
+  {
+    name: 'Dart',
+    image: 'dart.png',
+    hint: 'Client-optimized language for fast apps on any platform.',
+    url: 'https://dart.dev/',
+  },
 ];
 
 export default techs;
