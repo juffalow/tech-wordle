@@ -18,28 +18,34 @@ const tech = randomTech();
 
 const Home: React.FC = () => {
   const [attempts, setAttempts] = useState<any>([]);
-  const [guess, setGuess] = useState<any>({name: ''});
+  const [guess, setGuess] = useState<any>([{ name: '' }]);
 
   const onGuess = (value: any) => {
-    setGuess(value[0]);
+    setGuess(value);
   }
 
   const onSubmit = (event: any) => {
     event.preventDefault();
 
-    if (guess.name === tech.name) {
+    const name = guess[0]?.name;
+
+    if (typeof name === 'undefined') {
+      return;
+    }
+
+    if (name === tech.name) {
       setAttempts([
         ...attempts,
-        { name: guess.name, valid: true },
+        { name: name, valid: true },
       ]);
     } else {
       setAttempts([
         ...attempts,
-        { name: guess.name, valid: false },
+        { name: name, valid: false },
       ]);
     }
 
-    setGuess({ name: '' });
+    setGuess([{ name: '' }]);
   }
 
   return (
@@ -103,7 +109,7 @@ const Home: React.FC = () => {
                   id="technology"
                   labelKey="name"
                   options={techs}
-                  selected={[guess]}
+                  selected={guess}
                   placeholder="Choose a technology..."
                   onChange={onGuess}
                 />
