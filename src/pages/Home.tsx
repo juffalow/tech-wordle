@@ -49,7 +49,7 @@ const Home: React.FC = () => {
   }
 
   return (
-    <SEO title="" description="">
+    <SEO title="" description="Guess the technology (language, framework, ...) from the logo.">
       <Container>
         <Row className="mb-5">
           <Col lg={{ offset: 3, span: 6 }} className="text-center">
