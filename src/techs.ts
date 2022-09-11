@@ -77,6 +77,42 @@ const techs = [
     hint: 'Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.',
     url: 'https://go.dev/',
   },
+  {
+    name: 'Vue',
+    image: 'vue.png',
+    hint: 'An approachable, performant and versatile framework for building web user interfaces.',
+    url: 'https://vuejs.org/',
+  },
+  {
+    name: 'Docusaurus',
+    image: 'docusaurus.png',
+    hint: 'An optimized site generator in React.',
+    url: 'https://docusaurus.io/',
+  },
+  {
+    name: 'GraphQL',
+    image: 'graphql.png',
+    hint: 'Provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.',
+    url: 'https://graphql.org/',
+  },
+  {
+    name: 'Git',
+    image: 'git.png',
+    hint: 'Distributed version control system designed to handle everything from small to very large projects with speed and efficiency.',
+    url: 'https://git-scm.com/',
+  },
+  {
+    name: 'Kotlin',
+    image: 'kotlin.png',
+    hint: 'A modern programming language that makes developers happier.',
+    url: 'https://kotlinlang.org/',
+  },
+  {
+    name: 'Jest',
+    image: 'jest.png',
+    hint: 'Delightful JavaScript Testing Framework with a focus on simplicity.',
+    url: 'https://jestjs.io/',
+  },
 ];
 
 export default techs;
