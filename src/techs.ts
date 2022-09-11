@@ -113,6 +113,48 @@ const techs = [
     hint: 'Delightful JavaScript Testing Framework with a focus on simplicity.',
     url: 'https://jestjs.io/',
   },
+  {
+    name: 'Rust',
+    image: 'rust.png',
+    hint: 'A language empowering everyone to build reliable and efficient software.',
+    url: 'https://www.rust-lang.org/',
+  },
+  {
+    name: 'Ruby',
+    image: 'ruby.png',
+    hint: 'Language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.',
+    url: 'https://www.ruby-lang.org/',
+  },
+  {
+    name: 'Jenkins',
+    image: 'jenkins.png',
+    hint: 'Automation server which enables developers around the world to reliably build, test, and deploy their software.',
+    url: 'https://www.jenkins.io/',
+  },
+  {
+    name: 'ESLint',
+    image: 'eslint.png',
+    hint: 'Find and fix problems in your JavaScript code.',
+    url: 'https://eslint.org/',
+  },
+  {
+    name: 'Postman',
+    image: 'postman.png',
+    hint: 'API client that makes it easy for developers to create, share, test and document APIs.',
+    url: 'https://www.postman.com/',
+  },
+  {
+    name: 'Angular',
+    image: 'angular.png',
+    hint: 'Platform for building mobile and desktop web applications.',
+    url: 'https://angular.io/',
+  },
+  {
+    name: 'Hibernate',
+    image: 'hibernate.png',
+    hint: 'Reactive domain model persistence for relational databases.',
+    url: 'https://hibernate.org/',
+  },
 ];
 
 export default techs;
