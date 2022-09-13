@@ -15,7 +15,7 @@ const randomTech = () => {
   return techs[index];
 }
 
-const tech = randomTech();
+let tech = randomTech();
 
 const Home: React.FC = () => {
   const [attempts, setAttempts] = useState<any>([]);
@@ -27,12 +27,20 @@ const Home: React.FC = () => {
     setGuess(value);
   }
 
+  const onRestart = () => {
+    setGuess([{ name: '' }]);
+    setHasHint(false);
+    setIsEnd(false);
+    setAttempts([]);
+    tech = randomTech();
+  }
+
   const onSubmit = (event: any) => {
     event.preventDefault();
 
     const name = guess[0]?.name;
 
-    if (typeof name === 'undefined') {
+    if (typeof name === 'undefined' || name === '') {
       return;
     }
 
@@ -166,9 +174,17 @@ const Home: React.FC = () => {
                 />
               </Form.Group>
 
-              <div className="text-center">
-                <Button type="submit">Guess</Button>
-              </div>
+              {
+                isEnd ? (
+                  <div className="text-center">
+                    <Button onClick={onRestart} variant="success">Try another!</Button>
+                  </div>
+                ) : (
+                  <div className="text-center">
+                    <Button type="submit">Guess</Button>
+                  </div>
+                )
+              }
             </Form>
           </Col>
         </Row>
